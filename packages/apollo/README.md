@@ -23,7 +23,7 @@ $ npm install -g apollo
 $ apollo COMMAND
 running command...
 $ apollo (-v|--version|version)
-apollo/2.21.0 darwin-x64 node-v8.11.1
+apollo/2.21.1 linux-x64 node-v10.16.3
 $ apollo --help [COMMAND]
 USAGE
   $ apollo COMMAND
@@ -199,14 +199,15 @@ _See code: [src/commands/client/codegen.ts](https://github.com/apollographql/apo
 
 ## `apollo client:download-schema OUTPUT`
 
-Download a schema from engine or a GraphQL endpoint.
+Download a schema from engine or a GraphQL endpoint in JSON or SDL format
 
 ```
 USAGE
   $ apollo client:download-schema OUTPUT
 
 ARGUMENTS
-  OUTPUT  [default: schema.json] Path to write the introspection result to
+  OUTPUT  [default: schema.json] Path to write the introspection result to. Can be `.graphql`, `.gql`, `.graphqls`, or
+          `.json`
 
 OPTIONS
   -c, --config=config                    Path to your Apollo config file
